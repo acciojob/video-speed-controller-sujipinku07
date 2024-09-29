@@ -1,2 +1,66 @@
+ * {
+        box-sizing: border-box;
+      }
 
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #2c3e50;
+      }
+
+      .player {
+        max-width: 750px;
+        border: 5px solid #fff;
+        background: #333;
+        padding: 10px;
+        position: relative;
+      }
+
+      .viewer {
+        width: 100%;
+        display: block;
+      }
+
+      .controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      .player__button {
+        background: none;
+        border: 0;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 5px 10px;
+      }
+
+      .player__slider {
+        width: 100px;
+      }
+
+      .progress {
+        flex: 1;
+        background: #555;
+        cursor: pointer;
+        margin-right: 10px;
+        position: relative;
+        height: 5px;
+      }
+
+      .progress__filled {
+        width: 0;
+        background: #ffc600;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: width 0.1s;
+      }
 /* Your CSS Code here. */
